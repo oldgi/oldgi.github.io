@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://oldgi.github.io/about/</loc>
-    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
-  </url><url>
     <loc>https://oldgi.github.io/blog/</loc>
+    <lastmod>2022-12-25T11:58:00+08:00</lastmod>
+  </url><url>
+    <loc>https://oldgi.github.io/</loc>
+    <lastmod>2022-12-25T11:58:00+08:00</lastmod>
+  </url><url>
+    <loc>https://oldgi.github.io/about/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
     <loc>https://oldgi.github.io/contact/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
     <loc>https://oldgi.github.io/search/</loc>
-    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
-  </url><url>
-    <loc>https://oldgi.github.io/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
     <loc>https://oldgi.github.io/categories/android-and-gaming/</loc>
