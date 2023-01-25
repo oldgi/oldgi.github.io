@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>追日時光</title>
-    <link>https://oldgi.github.io/</link>
-    <description>Recent content on 追日時光</description>
+    <title>Hahow on 追日時光</title>
+    <link>https://oldgi.github.io/tags/hahow/</link>
+    <description>Recent content in Hahow on 追日時光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 24 Jan 2023 11:16:47 +0800</lastBuildDate><atom:link href="https://oldgi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Jan 2023 11:16:47 +0800</lastBuildDate><atom:link href="https://oldgi.github.io/tags/hahow/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>學習日記::Hahow Python 入門特訓 - 基礎實作到證照攻略 (2)</title>
       <link>https://oldgi.github.io/blog/20230124-post3/</link>
@@ -36,15 +36,6 @@
       <guid>https://oldgi.github.io/blog/20230121-post1/</guid>
       <description>我上完了 Hawhow 的課程：Github 免費架站術！輕鬆打造個人品牌。 課程有介一個Typora軟體可以即時Preview Markdown的效果；但我覺得麻煩，不想多裝一個軟體。 在VS Code的extensions中輸入markdown後，找了３個東西安裝。
 Extension 1：Markdown All in One 下載人數最多的那一個。不用額外設定裝好就行。讚讚。 裝他最主要是各種自動化功能，像是</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://oldgi.github.io/blog/20230125-post4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://oldgi.github.io/blog/20230125-post4/</guid>
-      <description></description>
     </item>
     
   </channel>

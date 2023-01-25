@@ -2,17 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://oldgi.github.io/contact/</loc>
-    <lastmod>2023-01-21T23:49:23+08:00</lastmod>
-  </url><url>
-    <loc>https://oldgi.github.io/</loc>
-    <lastmod>2023-01-21T23:49:23+08:00</lastmod>
-  </url><url>
     <loc>https://oldgi.github.io/blog/</loc>
-    <lastmod>2023-01-21T11:16:47+08:00</lastmod>
+    <lastmod>2023-01-24T11:16:47+08:00</lastmod>
   </url><url>
     <loc>https://oldgi.github.io/categories/</loc>
-    <lastmod>2023-01-21T11:16:47+08:00</lastmod>
+    <lastmod>2023-01-24T11:16:47+08:00</lastmod>
+  </url><url>
+    <loc>https://oldgi.github.io/tags/hahow/</loc>
+    <lastmod>2023-01-24T11:16:47+08:00</lastmod>
+  </url><url>
+    <loc>https://oldgi.github.io/tags/python/</loc>
+    <lastmod>2023-01-24T11:16:47+08:00</lastmod>
+  </url><url>
+    <loc>https://oldgi.github.io/categories/python/</loc>
+    <lastmod>2023-01-24T11:16:47+08:00</lastmod>
+  </url><url>
+    <loc>https://oldgi.github.io/tags/spyder/</loc>
+    <lastmod>2023-01-24T11:16:47+08:00</lastmod>
+  </url><url>
+    <loc>https://oldgi.github.io/tags/</loc>
+    <lastmod>2023-01-24T11:16:47+08:00</lastmod>
+  </url><url>
+    <loc>https://oldgi.github.io/blog/20230124-post3/</loc>
+    <lastmod>2023-01-24T11:16:47+08:00</lastmod>
+  </url><url>
+    <loc>https://oldgi.github.io/</loc>
+    <lastmod>2023-01-24T11:16:47+08:00</lastmod>
+  </url><url>
+    <loc>https://oldgi.github.io/blog/20230123-post2/</loc>
+    <lastmod>2023-01-23T11:16:47+08:00</lastmod>
+  </url><url>
+    <loc>https://oldgi.github.io/contact/</loc>
+    <lastmod>2023-01-21T23:49:23+08:00</lastmod>
   </url><url>
     <loc>https://oldgi.github.io/blog/20230121-post1/</loc>
     <lastmod>2023-01-21T11:16:47+08:00</lastmod>
@@ -23,9 +44,6 @@
     <loc>https://oldgi.github.io/categories/markdown/</loc>
     <lastmod>2023-01-21T11:16:47+08:00</lastmod>
   </url><url>
-    <loc>https://oldgi.github.io/tags/</loc>
-    <lastmod>2023-01-21T11:16:47+08:00</lastmod>
-  </url><url>
     <loc>https://oldgi.github.io/tags/vs-code/</loc>
     <lastmod>2023-01-21T11:16:47+08:00</lastmod>
   </url><url>
@@ -34,5 +52,7 @@
   </url><url>
     <loc>https://oldgi.github.io/search/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
+  </url><url>
+    <loc>https://oldgi.github.io/blog/20230125-post4/</loc>
   </url>
 </urlset>

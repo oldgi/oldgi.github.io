@@ -6,14 +6,26 @@
     <description>Recent content in Python on 追日時光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 29 Oct 2019 10:07:47 +0600</lastBuildDate><atom:link href="https://oldgi.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Jan 2023 11:16:47 +0800</lastBuildDate><atom:link href="https://oldgi.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://oldgi.github.io/blog/post-9/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <title>學習日記::Hahow Python 入門特訓 - 基礎實作到證照攻略 (2)</title>
+      <link>https://oldgi.github.io/blog/20230124-post3/</link>
+      <pubDate>Tue, 24 Jan 2023 11:16:47 +0800</pubDate>
       
-      <guid>https://oldgi.github.io/blog/post-9/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
+      <guid>https://oldgi.github.io/blog/20230124-post3/</guid>
+      <description>上 Hawhow 課程：Python 入門特訓 - 基礎實作到證照攻略。 學程式語言，基本的語言型態、命名規則及內建關鍵字、型別轉換、及格式輸出，是這堂課認為最基本的東西。
+這裡就不會一一列出課堂教的東西，在這幾個章節中，只把我自己寫出來的小作業貼上做為紀錄。
+讓使用者輸入身高及體重後計算BMI並印出 課程裡有提到如何計算BMI的公式，這裡應用到的是：</description>
+    </item>
+    
+    <item>
+      <title>學習日記::Hahow Python 入門特訓 - 基礎實作到證照攻略 (1)</title>
+      <link>https://oldgi.github.io/blog/20230123-post2/</link>
+      <pubDate>Mon, 23 Jan 2023 11:16:47 +0800</pubDate>
+      
+      <guid>https://oldgi.github.io/blog/20230123-post2/</guid>
+      <description>上 Hawhow 課程：Python 入門特訓 - 基礎實作到證照攻略。 首先不可免俗要在電腦上架設安裝的環境。
+安裝 Python 就算課程不教你也可以使用 google search 到 Python 的網站。以今天 (2023-01-23) 來說，他最新的版本是 &amp;ldquo;3.</description>
     </item>
     
   </channel>
