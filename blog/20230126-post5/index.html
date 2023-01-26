@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>追日時光</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Python基礎語法--for &amp; while 迴圏">
+  <meta name="author" content="蔡小靚">
+    
+  
+  <meta name="theme-name" content="liva-hugo" />
+  
+  <meta name="generator" content="Hugo 0.107.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://oldgi.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://oldgi.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://oldgi.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://oldgi.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://oldgi.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://oldgi.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://oldgi.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-252682040-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://oldgi.github.io"><img class="img-fluid"
+          src="https://oldgi.github.io/images/logo-bfURLVqwIBnEZHL92AbL--1--w8rrg.jpg" alt="追日時光"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/oldgi"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://oldgi.github.io"><img class="img-fluid"
+            src="https://oldgi.github.io/images/logo-bfURLVqwIBnEZHL92AbL--1--w8rrg.jpg" alt="追日時光"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://oldgi.github.io/about/">About</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://oldgi.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/python"
+          class="text-primary">Python</a>
+        
+        <h2>學習日記::Hahow Python 入門特訓 - 基礎實作到證照攻略 (4)</h2>
+        <div class="mb-3 post-meta">
+          <span>By 蔡小靚</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>26 January 2023</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p>上 Hawhow 課程：Python 入門特訓 - 基礎實作到證照攻略。
+學習使用 for &amp; while 迴圏。</p>
+<h3 id="for-迴圏的小-tip">for 迴圏的小 tip：</h3>
+<ul>
+<li>在巢狀迴圏時，動得比較快的數字要放內迴圏</li>
+<li>如果用來控制輸出排列要好看，又要固定數量換行（因為print預設結尾會帶&rsquo;\n&rsquo;），可以內層迴圏 <code>print(&quot;{:&lt;4}&quot;.format(i),end=' ')</code> ，然後在上一層次迴圏要汞再做一次<code>print()</code></li>
+<li>指定 for 迴圏的範圍時，使用的語法像是：<code>for i in range(7):</code>；其中的 i 是由 <strong>0~6</strong>；在使用時要特別注意。</li>
+</ul>
+<h3 id="while-迴圏的小-tip">while 迴圏的小 tip：</h3>
+<ul>
+<li>while 中的 break —— 有時候在某些條件成立之下，希望強制跳出一層的迴圈，可以使用 break 。</li>
+<li>while 中的 continue —— 有時候當某個條件成立，是希望迴圈內的後面的程式在這一次不要執行（跳過之意)、但是要再繼續迴圈其他的重複次數；就會使用 continue。</li>
+</ul>
+<p>這裡就不會一一列出課堂教的東西，一樣把課程上我寫的小作業貼上做為紀錄。</p>
+<!-- raw HTML omitted -->
+<h3 id="用-for-迴圏印出-4個方向的直角三角型">用 FOR 迴圏印出 4個方向的直角三角型</h3>
+<p>這裡我自己加碼了 運算元什麼都不寫的話就合部印出；另外是除法系列的分不可為０判斷也一恲放入。</p>
+<p>下面是我的代碼</p>
+<div class="highlight"><pre tabindex="0" style="color:#fe640b;background-color:#eff1f5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-PYTHON" data-lang="PYTHON"><span style="display:flex;"><span><span style="color:#7287fd">n</span><span style="color:#04a5e5">=</span><span style="font-style:italic">eval</span><span style="color:#4c4f69">(</span><span style="font-style:italic">input</span><span style="color:#4c4f69">(</span><span style="color:#40a02b">&#34;請輪入三角型階層數 : &#34;</span><span style="color:#4c4f69">))</span>
+</span></span><span style="display:flex;"><span><span style="font-style:italic">print</span><span style="color:#4c4f69">(</span><span style="color:#40a02b">&#34;直角(左下)三角型&#34;</span><span style="color:#4c4f69">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">for</span> <span style="color:#7287fd">i</span> <span style="color:#04a5e5;font-weight:bold">in</span> <span style="font-style:italic">range</span><span style="color:#4c4f69">(</span>1<span style="color:#4c4f69">,</span><span style="color:#7287fd">n</span><span style="color:#04a5e5">+</span>1<span style="color:#4c4f69">):</span>
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">print</span><span style="color:#4c4f69">(</span><span style="color:#40a02b">&#34;＊&#34;</span><span style="color:#04a5e5">*</span><span style="color:#7287fd">i</span><span style="color:#4c4f69">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-style:italic">print</span><span style="color:#4c4f69">(</span><span style="color:#40a02b">&#34;直角(右下)三角型&#34;</span><span style="color:#4c4f69">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">for</span> <span style="color:#7287fd">i</span> <span style="color:#04a5e5;font-weight:bold">in</span> <span style="font-style:italic">range</span><span style="color:#4c4f69">(</span>1<span style="color:#4c4f69">,</span><span style="color:#7287fd">n</span><span style="color:#04a5e5">+</span>1<span style="color:#4c4f69">):</span>
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">print</span><span style="color:#4c4f69">(</span><span style="color:#40a02b">&#34;　&#34;</span><span style="color:#04a5e5">*</span><span style="color:#4c4f69">(</span><span style="color:#7287fd">n</span><span style="color:#04a5e5">-</span><span style="color:#7287fd">i</span><span style="color:#4c4f69">)</span><span style="color:#04a5e5">+</span><span style="color:#40a02b">&#34;＊&#34;</span><span style="color:#04a5e5">*</span><span style="color:#7287fd">i</span><span style="color:#4c4f69">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-style:italic">print</span><span style="color:#4c4f69">(</span><span style="color:#40a02b">&#34;直角(左上)三角型&#34;</span><span style="color:#4c4f69">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">for</span> <span style="color:#7287fd">i</span> <span style="color:#04a5e5;font-weight:bold">in</span> <span style="font-style:italic">range</span><span style="color:#4c4f69">(</span>1<span style="color:#4c4f69">,</span><span style="color:#7287fd">n</span><span style="color:#04a5e5">+</span>1<span style="color:#4c4f69">):</span>
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">print</span><span style="color:#4c4f69">(</span><span style="color:#40a02b">&#34;＊&#34;</span><span style="color:#04a5e5">*</span><span style="color:#4c4f69">(</span><span style="color:#7287fd">n</span><span style="color:#04a5e5">-</span><span style="color:#7287fd">i</span><span style="color:#04a5e5">+</span>1<span style="color:#4c4f69">))</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="font-style:italic">print</span><span style="color:#4c4f69">(</span><span style="color:#40a02b">&#34;直角(右上)三角型&#34;</span><span style="color:#4c4f69">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">for</span> <span style="color:#7287fd">i</span> <span style="color:#04a5e5;font-weight:bold">in</span> <span style="font-style:italic">range</span><span style="color:#4c4f69">(</span><span style="color:#7287fd">n</span><span style="color:#4c4f69">):</span>
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">print</span><span style="color:#4c4f69">(</span><span style="color:#40a02b">&#34;　&#34;</span><span style="color:#04a5e5">*</span><span style="color:#7287fd">i</span><span style="color:#04a5e5">+</span><span style="color:#40a02b">&#34;＊&#34;</span><span style="color:#04a5e5">*</span><span style="color:#4c4f69">(</span><span style="color:#7287fd">n</span><span style="color:#04a5e5">-</span><span style="color:#7287fd">i</span><span style="color:#4c4f69">))</span>
+</span></span></code></pre></div><p>加碼列印等腰三角型</p>
+<div class="highlight"><pre tabindex="0" style="color:#fe640b;background-color:#eff1f5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#7287fd">h</span><span style="color:#04a5e5">=</span><span style="font-style:italic">eval</span><span style="color:#4c4f69">(</span><span style="font-style:italic">input</span><span style="color:#4c4f69">(</span><span style="color:#40a02b">&#34;請輪入等腰三角型的高 : &#34;</span><span style="color:#4c4f69">))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">for</span> <span style="color:#7287fd">i</span> <span style="color:#04a5e5;font-weight:bold">in</span> <span style="font-style:italic">range</span><span style="color:#4c4f69">(</span><span style="color:#7287fd">h</span><span style="color:#4c4f69">):</span>
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">print</span><span style="color:#4c4f69">(</span><span style="color:#40a02b">&#34;　&#34;</span><span style="color:#04a5e5">*</span><span style="color:#4c4f69">(</span><span style="color:#7287fd">h</span><span style="color:#04a5e5">-</span><span style="color:#7287fd">i</span><span style="color:#4c4f69">)</span><span style="color:#04a5e5">+</span><span style="color:#40a02b">&#34;＊&#34;</span><span style="color:#04a5e5">*</span><span style="color:#4c4f69">(</span>2<span style="color:#04a5e5">*</span><span style="color:#7287fd">i</span><span style="color:#04a5e5">+</span>1<span style="color:#4c4f69">))</span>
+</span></span></code></pre></div><!-- raw HTML omitted -->
+<h3 id="輸入一堆數字直到9999出現為止從中找到最大值">輸入一堆數字、直到9999出現為止；從中找到最大值</h3>
+<ul>
+<li>這裡 count 用來計算輸了幾個數字。</li>
+<li>列印時想要以 &lsquo;+&rsquo; 來串成輸出內容時，因為都要是 &lsquo;str&rsquo; 型態才行，所以這裡有使用到像 <code>str(count)</code> 的寫法。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#fe640b;background-color:#eff1f5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-PYTHON" data-lang="PYTHON"><span style="display:flex;"><span><span style="color:#7287fd">count</span><span style="color:#04a5e5">=</span>1
+</span></span><span style="display:flex;"><span><span style="color:#7287fd">maxnum</span> <span style="color:#04a5e5">=</span> <span style="font-style:italic">int</span><span style="color:#4c4f69">(</span><span style="font-style:italic">input</span><span style="color:#4c4f69">(</span><span style="color:#40a02b">&#34;請輸入第&#34;</span><span style="color:#04a5e5">+</span><span style="font-style:italic">str</span><span style="color:#4c4f69">(</span><span style="color:#7287fd">count</span><span style="color:#4c4f69">)</span><span style="color:#04a5e5">+</span><span style="color:#40a02b">&#34;個數字，直到9999結束：&#34;</span><span style="color:#4c4f69">))</span>
+</span></span><span style="display:flex;"><span><span style="color:#7287fd">userInput</span> <span style="color:#04a5e5">=</span> <span style="color:#7287fd">maxnum</span>
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">while</span> <span style="color:#7287fd">userInput</span> <span style="color:#04a5e5">!=</span> 9999<span style="color:#4c4f69">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8839ef">if</span> <span style="color:#7287fd">userInput</span> <span style="color:#04a5e5">&gt;</span> <span style="color:#7287fd">maxnum</span><span style="color:#4c4f69">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#7287fd">maxnum</span> <span style="color:#04a5e5">=</span> <span style="color:#7287fd">userInput</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#7287fd">count</span> <span style="color:#04a5e5">+=</span> 1
+</span></span><span style="display:flex;"><span>    <span style="color:#7287fd">userInput</span> <span style="color:#04a5e5">=</span> <span style="font-style:italic">int</span><span style="color:#4c4f69">(</span><span style="font-style:italic">input</span><span style="color:#4c4f69">(</span><span style="color:#40a02b">&#34;請輸入第&#34;</span><span style="color:#04a5e5">+</span><span style="font-style:italic">str</span><span style="color:#4c4f69">(</span><span style="color:#7287fd">count</span><span style="color:#4c4f69">)</span><span style="color:#04a5e5">+</span><span style="color:#40a02b">&#34;個數字，直到9999結束：&#34;</span><span style="color:#4c4f69">))</span>
+</span></span><span style="display:flex;"><span><span style="font-style:italic">print</span><span style="color:#4c4f69">(</span><span style="color:#40a02b">&#34;輸入&#34;</span><span style="color:#04a5e5">+</span><span style="font-style:italic">str</span><span style="color:#4c4f69">(</span><span style="color:#7287fd">count</span><span style="color:#4c4f69">)</span><span style="color:#04a5e5">+</span><span style="color:#40a02b">&#34;個數字，其中最大的值是 : &#34;</span><span style="color:#4c4f69">,</span><span style="color:#7287fd">maxnum</span><span style="color:#4c4f69">)</span>
+</span></span><span style="display:flex;"><span>    
+</span></span></code></pre></div>
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "oldgi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<script>
+  var indexURL = "https://oldgi.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://oldgi.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://oldgi.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://oldgi.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://oldgi.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://oldgi.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://oldgi.github.io/plugins/search/mark.js"></script>
+
+<script src="https://oldgi.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://oldgi.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>
