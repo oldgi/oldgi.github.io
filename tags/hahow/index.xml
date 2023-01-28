@@ -6,7 +6,17 @@
     <description>Recent content in Hahow on 追日時光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 26 Jan 2023 22:16:47 +0800</lastBuildDate><atom:link href="https://oldgi.github.io/tags/hahow/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Jan 2023 10:34:00 +0800</lastBuildDate><atom:link href="https://oldgi.github.io/tags/hahow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>學習日記::Hahow Python 入門特訓 - 基礎實作到證照攻略 (4)</title>
+      <link>https://oldgi.github.io/blog/20230127-post6/</link>
+      <pubDate>Fri, 27 Jan 2023 10:34:00 +0800</pubDate>
+      
+      <guid>https://oldgi.github.io/blog/20230127-post6/</guid>
+      <description>上 Hawhow 課程：Python 入門特訓 - 基礎實作到證照攻略。 今天交作業。
+作業 1 - 倍數的個數與總和 1_使用者輸入兩個正整數 a 和 b, 其中 a 必需 &amp;lt;= b 2_找到 a 和 b 之間 7 或 11 的倍數並印出 3_印出的時候，一列輸出 10 個數字，欄寬為 4，靠左對齊 4_最後印出倍數的個數及總和</description>
+    </item>
+    
     <item>
       <title>學習日記::Hahow Python 入門特訓 - 基礎實作到證照攻略 (4)</title>
       <link>https://oldgi.github.io/blog/20230126-post5/</link>

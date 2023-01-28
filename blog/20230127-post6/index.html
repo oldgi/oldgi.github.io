@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Python基礎語法--for &amp; while 迴圏">
+  <meta name="description" content="Python基礎語法--作業(1)">
   <meta name="author" content="蔡小靚">
     
   
@@ -124,60 +124,50 @@
           <span>By 蔡小靚</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>26 January 2023</span>
+          <span>27 January 2023</span>
           
         </div>
         
         <div class="content mb-5">
           <p>上 Hawhow 課程：Python 入門特訓 - 基礎實作到證照攻略。
-學習使用 for &amp; while 迴圏。</p>
-<h3 id="for-迴圏的小-tip">for 迴圏的小 tip：</h3>
-<ul>
-<li>在巢狀迴圏時，動得比較快的數字要放內迴圏</li>
-<li>如果用來控制輸出排列要好看，又要固定數量換行（因為print預設結尾會帶&rsquo;\n&rsquo;），可以內層迴圏 <code>print(&quot;{:&lt;4}&quot;.format(i),end=' ')</code> ，然後在上一層次迴圏要汞再做一次<code>print()</code></li>
-<li>指定 for 迴圏的範圍時，使用的語法像是：<code>for i in range(7):</code>；其中的 i 是由 <strong>0~6</strong>；在使用時要特別注意。</li>
-</ul>
-<h3 id="while-迴圏的小-tip">while 迴圏的小 tip：</h3>
-<ul>
-<li>while 中的 break —— 有時候在某些條件成立之下，希望強制跳出一層的迴圈，可以使用 break 。</li>
-<li>while 中的 continue —— 有時候當某個條件成立，是希望迴圈內的後面的程式在這一次不要執行（跳過之意)、但是要再繼續迴圈其他的重複次數；就會使用 continue。</li>
-</ul>
-<p>這裡就不會一一列出課堂教的東西，一樣把課程上我寫的小作業貼上做為紀錄。</p>
-<!-- raw HTML omitted -->
-<h3 id="用-for-迴圏印出-4個方向的直角三角型">用 FOR 迴圏印出 4個方向的直角三角型</h3>
+今天交作業。</p>
+<h3 id="作業-1---倍數的個數與總和">作業 1 - 倍數的個數與總和</h3>
+<blockquote>
+<p>1_使用者輸入兩個正整數 a 和 b, 其中 a 必需 &lt;= b
+2_找到 a 和 b 之間 7 或 11 的倍數並印出
+3_印出的時候，一列輸出 10 個數字，欄寬為 4，靠左對齊
+4_最後印出倍數的個數及總和</p>
+</blockquote>
 <p>下面是效果和我的代碼
-<img src="../../static/images/featured-post/post5_20230127_125017.png" alt=""></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-PYTHON" data-lang="PYTHON"><span style="display:flex;"><span>n<span style="color:#666">=</span><span style="color:#a2f">eval</span>(<span style="color:#a2f">input</span>(<span style="color:#b44">&#34;請輪入三角型階層數 : &#34;</span>))
-</span></span><span style="display:flex;"><span><span style="color:#a2f">print</span>(<span style="color:#b44">&#34;直角(左下)三角型&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(<span style="color:#666">1</span>,n<span style="color:#666">+</span><span style="color:#666">1</span>):
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f">print</span>(<span style="color:#b44">&#34;＊&#34;</span><span style="color:#666">*</span>i)
+<img src="../../static/images/featured-post/post6_20230128_122922.png" alt=""></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-PYTHON" data-lang="PYTHON"><span style="display:flex;"><span>a<span style="color:#666">=</span><span style="color:#a2f">int</span>(<span style="color:#a2f">input</span>(<span style="color:#b44">&#34;請輸入第一個整數 a : &#34;</span>))
+</span></span><span style="display:flex;"><span>b<span style="color:#666">=</span><span style="color:#a2f">int</span>(<span style="color:#a2f">input</span>(<span style="color:#b44">&#34;請輸入第二個整數 b (請注意 b &gt;= a): &#34;</span>))
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a2f">print</span>(<span style="color:#b44">&#34;直角(右下)三角型&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(<span style="color:#666">1</span>,n<span style="color:#666">+</span><span style="color:#666">1</span>):
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f">print</span>(<span style="color:#b44">&#34;　&#34;</span><span style="color:#666">*</span>(n<span style="color:#666">-</span>i)<span style="color:#666">+</span><span style="color:#b44">&#34;＊&#34;</span><span style="color:#666">*</span>i)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a2f">print</span>(<span style="color:#b44">&#34;直角(左上)三角型&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(<span style="color:#666">1</span>,n<span style="color:#666">+</span><span style="color:#666">1</span>):
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f">print</span>(<span style="color:#b44">&#34;＊&#34;</span><span style="color:#666">*</span>(n<span style="color:#666">-</span>i<span style="color:#666">+</span><span style="color:#666">1</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">while</span> b <span style="color:#666">&lt;</span> a:
+</span></span><span style="display:flex;"><span>    b<span style="color:#666">=</span><span style="color:#a2f">int</span>(<span style="color:#a2f">input</span>(<span style="color:#b44">&#34;請輸入第二個整數 b (請注意 b &gt;= a): &#34;</span>))
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span><span style="color:#a2f">print</span>(<span style="color:#b44">&#34;直角(右上)三角型&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(n):
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f">print</span>(<span style="color:#b44">&#34;　&#34;</span><span style="color:#666">*</span>i<span style="color:#666">+</span><span style="color:#b44">&#34;＊&#34;</span><span style="color:#666">*</span>(n<span style="color:#666">-</span>i))
-</span></span></code></pre></div><p><strong>加碼列印等腰三角型</strong>
-下面是效果和我的代碼
-<img src="../../static/images/featured-post/post5_20230127_125048.png" alt=""></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span>h<span style="color:#666">=</span><span style="color:#a2f">eval</span>(<span style="color:#a2f">input</span>(<span style="color:#b44">&#34;請輪入等腰三角型的高 : &#34;</span>))
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(h):
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f">print</span>(<span style="color:#b44">&#34;　&#34;</span><span style="color:#666">*</span>(h<span style="color:#666">-</span>i)<span style="color:#666">+</span><span style="color:#b44">&#34;＊&#34;</span><span style="color:#666">*</span>(<span style="color:#666">2</span><span style="color:#666">*</span>i<span style="color:#666">+</span><span style="color:#666">1</span>))
+</span></span><span style="display:flex;"><span>count<span style="color:#666">=</span><span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>sum_num<span style="color:#666">=</span><span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>i<span style="color:#666">=</span>a
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">while</span> i <span style="color:#666">&lt;=</span> b:    
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">if</span> i<span style="color:#666">%</span><span style="color:#666">7</span><span style="color:#666">==</span><span style="color:#666">0</span> <span style="color:#a2f;font-weight:bold">or</span> i<span style="color:#666">%</span><span style="color:#666">11</span><span style="color:#666">==</span><span style="color:#666">0</span>:     
+</span></span><span style="display:flex;"><span>        count<span style="color:#666">+=</span><span style="color:#666">1</span>        
+</span></span><span style="display:flex;"><span>        sum_num<span style="color:#666">+=</span>i
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> count<span style="color:#666">%</span><span style="color:#666">10</span> <span style="color:#666">!=</span> <span style="color:#666">0</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f">print</span>(<span style="color:#b44">&#34;</span><span style="color:#b68;font-weight:bold">{:&lt;4}</span><span style="color:#b44">&#34;</span><span style="color:#666">.</span>format(i),end<span style="color:#666">=</span><span style="color:#b44">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f">print</span>()
+</span></span><span style="display:flex;"><span>    i<span style="color:#666">+=</span><span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#a2f">print</span>(<span style="color:#b44">&#34;在</span><span style="color:#b68;font-weight:bold">{}</span><span style="color:#b44">和</span><span style="color:#b68;font-weight:bold">{}</span><span style="color:#b44">之間為 7 或 11 的位數 </span><span style="color:#b68;font-weight:bold">{}</span><span style="color:#b44"> 個，加總為 </span><span style="color:#b68;font-weight:bold">{}</span><span style="color:#b44">&#34;</span><span style="color:#666">.</span>format(a,b,count,sum_num))
 </span></span></code></pre></div><!-- raw HTML omitted -->
-<h3 id="輸入一堆數字直到9999出現為止從中找到最大值">輸入一堆數字、直到9999出現為止；從中找到最大值</h3>
+<h3 id="同樣的作業叫-chatgpt寫呢">同樣的作業叫 chatGPT寫呢？</h3>
 <ul>
 <li>這裡 count 用來計算輸了幾個數字。</li>
 <li>列印時想要以 &lsquo;+&rsquo; 來串成輸出內容時，因為都要是 &lsquo;str&rsquo; 型態才行，所以這裡有使用到像 <code>str(count)</code> 的寫法。</li>
 </ul>
-<p>下面是效果和我的代碼
-<img src="../../static/images/featured-post/post5_20230127_125131.png" alt=""></p>
+<p>下面是效果和 chatGPT 的代碼，明顥比我簡潔又好讀多了。
+<img src="../../static/images/featured-post/POST6_20230128_123017.png" alt=""></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-PYTHON" data-lang="PYTHON"><span style="display:flex;"><span>count<span style="color:#666">=</span><span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>maxnum <span style="color:#666">=</span> <span style="color:#a2f">int</span>(<span style="color:#a2f">input</span>(<span style="color:#b44">&#34;請輸入第&#34;</span><span style="color:#666">+</span><span style="color:#a2f">str</span>(count)<span style="color:#666">+</span><span style="color:#b44">&#34;個數字，直到9999結束：&#34;</span>))
 </span></span><span style="display:flex;"><span>userInput <span style="color:#666">=</span> maxnum
